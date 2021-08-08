@@ -1,0 +1,39 @@
+{# 主页 index.html #}
+
+{# 继承父模板 #}
+{% extends 'base.html' %}
+
+{# 主页头部 #}
+{% block header %}
+
+<title>主页 - 飞鸽传书</title>
+<link rel="stylesheet" href="/static/css/poem.css">
+
+
+{% endblock header %}
+
+{# 主页内容 #}
+{% block body %}
+
+<!-- 诗 -->
+<div class="poem-wrap" style="margin-top: 3.5cm">
+    <div class="poem-border poem-left"></div>
+    <div class="poem-border poem-right"></div>
+    <h1>念两句诗</h1>
+    <p id="poem">鸽子找诗中···</p>
+    <p id="info"></p>
+</div>
+
+<div style="text-align: center;">
+    <h2>欢迎使用飞鸽传书</h2>
+    <h4>点击<a href="new_twitter">书写留言</a>，在此留下你的足迹。</h4>
+</div>
+
+{% endblock body %}
+
+
+{# 页面底部 #}
+
+{% block footer %}
+
+{% endblock footer %}

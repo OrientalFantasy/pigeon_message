@@ -1,0 +1,8 @@
+.aplayer-list {    
+    border: none;
+    border-top-right-radius: 3px;
+    background-image: url(https://cdn.jsdelivr.net/gh/chanshiyucx/yoi/blog/reimu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+ }

@@ -1,0 +1,52 @@
+{# 继承父模板 #}
+{% extends 'base.html' %}
+
+
+{# 主页头部 #}
+{% block header %}
+
+<title>写留言 - 飞鸽传书</title>
+
+{% endblock header %}
+
+{# 主页内容 #}
+{% block body %}
+
+<div style="margin-top: 1cm;">
+
+<form autocomplete="on" method="POST">
+    <!-- 用户登录判断，写不完了，暂时只能用表单提交 -->
+    <div class="mdui-textfield" style="margin-left: 5%; margin-right: 10%;">
+        <i class="mdui-icon material-icons">account_circle</i>
+        <label class="mdui-textfield-label">Nick</label>
+        <input class="mdui-textfield-input" name="nick" type="text"/>
+        <div class="mdui-textfield-error">昵称不能为空</div>
+        <div class="mdui-textfield-helper">请输入您的昵称</div>
+    </div>
+
+  <!-- 留言内容 -->
+  <div class="mdui-textfield" style="margin-left: 5%; margin-right: 10%;">
+    <i class="mdui-icon material-icons">chat_bubble_outline</i>
+    <input class="mdui-textfield-input" name="twitter" type="text" maxlength="3200"/>
+    <div class="mdui-textfield-error">留言内容不能为空</div>
+    <div class="mdui-textfield-helper">请输入您的的留言</div>
+</div>
+
+<!-- 提交按钮 -->
+<div style="margin-top: 1cm;"> 
+    <div style="text-align: right; margin-right: 5%">
+    <button class="mdui-btn mdui-ripple mdui-color-blue" type="submit">留言</button>
+    </div>
+</div>
+</form>
+
+</div>
+
+{% endblock body %}
+
+
+{# 页面底部 #}
+
+{% block footer %}
+
+{% endblock footer %}

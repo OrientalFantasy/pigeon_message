@@ -1,0 +1,28 @@
+{# 继承父模板 #}
+{% extends 'base.html' %}
+
+{# Head #}
+{% block header %}
+
+<title>留言 - 飞鸽传书</title>
+
+{% endblock header %}
+
+{# Body #}
+{% block body %}
+
+{# 关闭转义 #}
+{% autoescape false %}
+
+{{ body }}
+
+{% endautoescape %}
+
+{% endblock body %}
+
+
+{# Footer #}
+
+{% block footer %}
+
+{% endblock footer %}
