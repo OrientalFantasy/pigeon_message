@@ -138,7 +138,7 @@ def twitter():
     for item in item_list:
         nick = item.nick
         twitter = item.twitter
-        time = item.time
+        time = str(item.time)
         body_data = replace('ni_ck', nick, twitter_template)
         body_data = replace('twit_ter', twitter, body_data)
         body_data = replace('ti_me', time, body_data)
